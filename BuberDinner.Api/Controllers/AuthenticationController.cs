@@ -7,13 +7,13 @@ namespace BuberDinner.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ControllerBase
 {
-    [Route("register")]
+    [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
         return Ok(request);
     }
 
-    [Route("login")]
+    [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
         return Ok(request);
